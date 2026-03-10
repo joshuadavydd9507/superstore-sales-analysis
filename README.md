@@ -1,145 +1,353 @@
-Superstore Sales & Profitability Analysis
-Project Overview
+# Superstore Sales & Profitability Analysis
 
-This project explores the Superstore retail dataset to analyse sales performance, operational behaviour, and profitability drivers. The analysis focuses on identifying which operational and commercial factors influence revenue generation and profit outcomes.
+## Project Overview
 
-The objective of the project is to demonstrate a structured analytical workflow for:
+This project explores a retail sales dataset to identify **operational and commercial patterns associated with sales performance and profitability**. The analysis focuses on understanding which transaction characteristics are most strongly related to revenue generation and profit outcomes through structured **exploratory data analysis (EDA)** and **regression modelling**.
 
-Data cleaning
+The goal of the project is to demonstrate a practical workflow for:
 
-Exploratory data analysis (EDA)
+- Data cleaning  
+- Exploratory data analysis  
+- Feature investigation  
+- Profitability analysis  
+- Operational performance investigation  
+- Analytical interpretation  
 
-Operational performance investigation
+The project was completed using **Python** and **Jupyter Notebook**.
 
-Profitability analysis
+---
 
-Statistical modelling using regression
+# Example Analysis
 
-The analysis was conducted using Python and Jupyter Notebook.
+Below are example visualisations from the exploratory analysis.
 
-Example Analysis
-Monthly Sales Trend
+## Monthly Sales Trend
+![Monthly Sales Trend](charts/month_sales.png)
 
-Profit Distribution
+## Profit Distribution
+![Profit Distribution](charts/profit_distribution.png)
 
-Discount vs Profit
+## Shipping Time by Mode
+![Shipping Time by Mode](charts/shipping_time_by_mode.png)
 
-Correlation Heatmap
+## Sales Distribution by Shipping Mode
+![Sales Distribution by Shipping Mode](charts/sales_distribution_shipping_mode_log.png)
 
-Key Findings
-Discount impact on profitability
+## Profit by Discount Level
+![Average Profit by Discount](charts/average_profit_by_discount.png)
 
-Discount levels show a clear negative relationship with profit. Higher discount rates frequently lead to significantly lower profits and in some cases result in loss-making transactions.
+## Correlation Heatmap
+![Correlation Heatmap](charts/correlation_matrix_sales_variables.png)
 
-This suggests that aggressive discounting strategies can erode profit margins.
+## Discount vs Profit Regression
+![Discount vs Profit Regression](charts/discount_profit_regression.png)
 
-Sales and shipping cost relationship
+## Regression Residual Plot
+![Residual Plot](charts/residual_plot.png)
 
-Sales and shipping cost demonstrate a strong positive correlation (0.77). This indicates that higher-value orders tend to incur higher shipping costs, suggesting that shipping cost acts as a proxy for order size.
+---
 
-Category profitability differences
+# Dataset
 
-Technology and Office Supplies categories generate higher average profit levels compared to Furniture, indicating differences in product margin structures.
+The dataset contains **51,290 retail transactions** with variables describing order behaviour, product characteristics, and financial performance.
 
-Operational behaviour
+Example features include:
 
-Standard Class shipping accounts for the majority of transactions, reflecting customer preference for lower-cost delivery options rather than faster shipping.
+- Order date  
+- Ship date  
+- Shipping mode  
+- Product category and sub-category  
+- Sales revenue  
+- Quantity sold  
+- Discount  
+- Profit  
+- Shipping cost  
+- Region and market  
 
-Dataset
+The primary variables of interest include:
 
-The Superstore dataset contains transactional retail sales data commonly used for business analytics practice.
+`Sales`, `Profit`, `Discount`, and `Ship_Mode`
 
-The dataset includes variables describing order behaviour, product characteristics, and financial performance.
+which support the investigation of commercial and operational performance.
 
-Key features include:
+---
 
-Order date
+# Methodology
 
-Product category and sub-category
+The analysis follows a structured exploratory data analysis workflow:
 
-Sales revenue
+1. Data Overview  
+2. Data Quality Assessment  
+3. Data Cleaning  
+4. Feature Engineering  
+5. Exploratory Data Analysis  
+6. Operational Performance Investigation  
+7. Profitability Analysis  
+8. Correlation Analysis  
+9. Multiple Linear Regression  
+10. Summary of Key Findings  
 
-Profit
+The objective is to identify **commercial and operational factors that may influence sales and profit performance**.
 
-Discount level
+---
 
-Shipping mode
+# Key Findings
 
-Quantity sold
+### Discount impact on profit
 
-Shipping cost
+Discount levels show a **clear negative relationship with profit**. Higher discount rates frequently lead to lower profits and in some cases loss-making transactions.
 
-Each row represents an individual retail transaction.
+This suggests that **aggressive discounting can significantly erode profit margins**.
 
-Methodology
+---
 
-The analysis follows a structured exploratory analytics workflow:
+### Category profitability
 
-Data overview
+Technology and Office Supplies generate **stronger average profit performance** compared to Furniture, indicating meaningful differences in category margin structure.
 
-Data quality assessment
+This suggests that **product mix is an important driver of profitability**.
 
-Data cleaning and feature engineering
+---
 
-Exploratory data analysis
+### Shipping behaviour
 
-Operational analysis
+Standard Class accounts for the **largest share of transactions** and exhibits longer delivery times than other transport modes. However, shipping mode appears to have limited influence on order value.
 
-Profitability analysis
+---
 
-Multiple linear regression modelling
+### Sales and shipping cost relationship
 
-Model diagnostics and interpretation
+Sales and shipping cost demonstrate a **strong positive correlation**, suggesting that larger orders tend to incur higher shipping costs.
 
-The objective is to identify the operational and commercial drivers of profitability.
+---
 
-Tools & Libraries
+### Regression analysis
+
+Multiple linear regression indicates that **discount has the strongest negative influence on profit**, while variables such as quantity and shipping cost show smaller positive relationships.
+
+---
+
+### Overall conclusion
+
+The analysis suggests that profitability in this dataset is more strongly associated with **discount strategy, product category, and order value** rather than shipping mode alone.
+
+Variables such as **discount and category structure** appear to provide more meaningful commercial signals when evaluating profit performance.
+
+---
+
+# Tools & Libraries
 
 The analysis was conducted using Python and the following libraries:
 
-Pandas
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+- Jupyter Notebook  
 
-NumPy
+---
 
-Matplotlib
+# Project Skills Demonstrated
 
-Seaborn
+This project demonstrates practical analytical skills including:
 
-Scikit-learn
+- Data cleaning and preparation  
+- Exploratory data analysis (EDA)  
+- Feature engineering  
+- Operational analysis  
+- Profitability analysis  
+- Correlation analysis  
+- Regression modelling  
+- Data visualisation  
+- Analytical interpretation and reporting  
 
-Jupyter Notebook
+---
 
-Skills Demonstrated
+# Repository Structure
+# Superstore Sales & Profitability Analysis
 
-This project demonstrates analytical capabilities relevant to commercial analytics and operations roles:
+## Project Overview
 
-Data cleaning and preparation
+This project explores a retail sales dataset to identify **operational and commercial patterns associated with sales performance and profitability**. The analysis focuses on understanding which transaction characteristics are most strongly related to revenue generation and profit outcomes through structured **exploratory data analysis (EDA)** and **regression modelling**.
 
-Exploratory data analysis (EDA)
+The goal of the project is to demonstrate a practical workflow for:
 
-Operational performance analysis
+- Data cleaning  
+- Exploratory data analysis  
+- Feature investigation  
+- Profitability analysis  
+- Operational performance investigation  
+- Analytical interpretation  
 
-Profitability analysis
+The project was completed using **Python** and **Jupyter Notebook**.
 
-Correlation analysis
+---
 
-Regression modelling
+# Example Analysis
 
-Data visualisation
+Below are example visualisations from the exploratory analysis.
 
-Business insight interpretation
+## Monthly Sales Trend
+![Monthly Sales Trend](charts/month_sales.png)
 
-Future Improvements
+## Profit Distribution
+![Profit Distribution](charts/profit_distribution.png)
 
-Potential extensions of this project include:
+## Shipping Time by Mode
+![Shipping Time by Mode](charts/shipping_time_by_mode.png)
 
-Forecasting sales trends using time-series models
+## Sales Distribution by Shipping Mode
+![Sales Distribution by Shipping Mode](charts/sales_distribution_shipping_mode_log.png)
 
-Profit optimisation analysis for discount strategies
+## Profit by Discount Level
+![Average Profit by Discount](charts/average_profit_by_discount.png)
 
-Interactive dashboard visualisation
+## Correlation Heatmap
+![Correlation Heatmap](charts/correlation_matrix_sales_variables.png)
 
-Customer segmentation analysis
+## Discount vs Profit Regression
+![Discount vs Profit Regression](charts/discount_profit_regression.png)
+
+## Regression Residual Plot
+![Residual Plot](charts/residual_plot.png)
+
+---
+
+# Dataset
+
+The dataset contains **51,290 retail transactions** with variables describing order behaviour, product characteristics, and financial performance.
+
+Example features include:
+
+- Order date  
+- Ship date  
+- Shipping mode  
+- Product category and sub-category  
+- Sales revenue  
+- Quantity sold  
+- Discount  
+- Profit  
+- Shipping cost  
+- Region and market  
+
+The primary variables of interest include:
+
+`Sales`, `Profit`, `Discount`, and `Ship_Mode`
+
+which support the investigation of commercial and operational performance.
+
+---
+
+# Methodology
+
+The analysis follows a structured exploratory data analysis workflow:
+
+1. Data Overview  
+2. Data Quality Assessment  
+3. Data Cleaning  
+4. Feature Engineering  
+5. Exploratory Data Analysis  
+6. Operational Performance Investigation  
+7. Profitability Analysis  
+8. Correlation Analysis  
+9. Multiple Linear Regression  
+10. Summary of Key Findings  
+
+The objective is to identify **commercial and operational factors that may influence sales and profit performance**.
+
+---
+
+# Key Findings
+
+### Discount impact on profit
+
+Discount levels show a **clear negative relationship with profit**. Higher discount rates frequently lead to lower profits and in some cases loss-making transactions.
+
+This suggests that **aggressive discounting can significantly erode profit margins**.
+
+---
+
+### Category profitability
+
+Technology and Office Supplies generate **stronger average profit performance** compared to Furniture, indicating meaningful differences in category margin structure.
+
+This suggests that **product mix is an important driver of profitability**.
+
+---
+
+### Shipping behaviour
+
+Standard Class accounts for the **largest share of transactions** and exhibits longer delivery times than other transport modes. However, shipping mode appears to have limited influence on order value.
+
+---
+
+### Sales and shipping cost relationship
+
+Sales and shipping cost demonstrate a **strong positive correlation**, suggesting that larger orders tend to incur higher shipping costs.
+
+---
+
+### Regression analysis
+
+Multiple linear regression indicates that **discount has the strongest negative influence on profit**, while variables such as quantity and shipping cost show smaller positive relationships.
+
+---
+
+### Overall conclusion
+
+The analysis suggests that profitability in this dataset is more strongly associated with **discount strategy, product category, and order value** rather than shipping mode alone.
+
+Variables such as **discount and category structure** appear to provide more meaningful commercial signals when evaluating profit performance.
+
+---
+
+# Tools & Libraries
+
+The analysis was conducted using Python and the following libraries:
+
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+- Jupyter Notebook  
+
+---
+
+# Project Skills Demonstrated
+
+This project demonstrates practical analytical skills including:
+
+- Data cleaning and preparation  
+- Exploratory data analysis (EDA)  
+- Feature engineering  
+- Operational analysis  
+- Profitability analysis  
+- Correlation analysis  
+- Regression modelling  
+- Data visualisation  
+- Analytical interpretation and reporting  
+
+---
+
+# Repository Structure
+superstore-sales-analysis
+│
+├── superstore_sales.ipynb
+├── SuperStoreOrders.csv
+│
+├── charts
+│ ├── month_sales.png
+│ ├── profit_distribution.png
+│ ├── shipping_time_by_mode.png
+│ ├── sales_distribution_shipping_mode_log.png
+│ ├── average_profit_by_discount.png
+│ ├── correlation_matrix_sales_variables.png
+│ ├── discount_profit_regression.png
+│ └── residual_plot.png
+│
+└── README.md
 
 Author
 
