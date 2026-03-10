@@ -22,28 +22,28 @@ The project was completed using **Python** and **Jupyter Notebook**.
 Below are example visualisations from the exploratory analysis.
 
 ## Monthly Sales Trend
-![Monthly Sales Trend](charts/month_sales.png)
+![Monthly Sales Trend](Charts/month_sales.png)
 
 ## Profit Distribution
-![Profit Distribution](charts/profit_distribution.png)
+![Profit Distribution](Charts/profit_distribution.png)
 
 ## Shipping Time by Mode
-![Shipping Time by Mode](charts/shipping_time_by_mode.png)
+![Shipping Time by Mode](Charts/shipping_time_by_mode.png)
 
 ## Sales Distribution by Shipping Mode
-![Sales Distribution by Shipping Mode](charts/sales_distribution_shipping_mode_log.png)
+![Sales Distribution by Shipping Mode](Charts/sales_distribution_shipping_mode_log.png)
 
 ## Profit by Discount Level
-![Average Profit by Discount](charts/average_profit_by_discount.png)
+![Average Profit by Discount](Charts/average_profit_by_discount.png)
 
 ## Correlation Heatmap
-![Correlation Heatmap](charts/correlation_matrix_sales_variables.png)
+![Correlation Heatmap](Charts/correlation_matrix_sales_variables.png)
 
 ## Discount vs Profit Regression
-![Discount vs Profit Regression](charts/discount_profit_regression.png)
+![Discount vs Profit Regression](Charts/discount_profit_regression.png)
 
 ## Regression Residual Plot
-![Residual Plot](charts/residual_plot.png)
+![Residual Plot](Charts/residual_plot.png)
 
 ---
 
