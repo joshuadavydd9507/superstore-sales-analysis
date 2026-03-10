@@ -31,13 +31,13 @@ Below are example visualisations from the exploratory analysis.
 ![Shipping Time by Mode](Charts/shipping_time_by_mode.png)
 
 ## Sales Distribution by Shipping Mode
-![Sales Distribution by Shipping Mode](Charts/sales_distribution_shipping_mode_log.png)
+![Sales Distribution by Shipping Mode](Charts/sales_distribution_shipping_mode.png)
 
 ## Profit by Discount Level
 ![Average Profit by Discount](Charts/average_profit_by_discount.png)
 
 ## Correlation Heatmap
-![Correlation Heatmap](Charts/correlation_matrix_sales_variables.png)
+![Correlation Heatmap](Charts/correlation_matrix_sales_variable.png)
 
 ## Discount vs Profit Regression
 ![Discount vs Profit Regression](Charts/discount_profit_regression.png)
